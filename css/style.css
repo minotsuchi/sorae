@@ -1,0 +1,331 @@
+body {
+  font-family: FOT-TsukuARdGothic Std;
+  font-size: 16px;
+}
+
+.container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(10, 32, 78);
+}
+
+
+.banner {
+  background: url("/images/banner.png") no-repeat center center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -60px;
+}
+
+.banner h2 {
+  align-items: center;
+  font-size: 48px;
+}
+
+
+/* MV */
+.mv {
+  background-image: url(/images/mv-main.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 1017px;
+}
+
+.mv-content h1 {
+  position: relative;
+  left: 74px;
+}
+
+.mv-content h2 {
+  position: relative;
+  left: 158px;
+}
+
+.mv-sorae-set {
+  position: relative;
+  left: 126px;
+}
+
+.btn-buy {
+  position: relative;
+  left: 500px;
+  bottom: 171px;
+}
+
+.mv-sorae-foryou {
+  position: relative;
+  top: 20px;
+}
+
+/* approach要素 */
+
+.approach-img h3 {
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.approach-img div {
+  padding-bottom: 100px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.approach-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.approach-point {
+  background-image: url(/images/approach_contents3.png);
+  padding-bottom: 100px;
+  padding-top: 100px;
+  gap: 40px;
+  text-align: center;
+}
+
+.approach-point-boxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.approach-point-boxs div {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 20px;
+  flex: 1 1 calc(25% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  min-width: 245px;
+  min-height: 256px;
+}
+
+.approach-point-boxs h3 {
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.approach-point-boxs p {
+  font-size: 16px;
+}
+
+.approach-point-boxs h3::after {
+  border-style: 2px solid black;
+}
+
+
+/* approachのなかのエッセンス要素 */
+.approach-essence {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+}
+
+
+.approach-essence-boxs {
+  display: flex;
+}
+
+.approach-essence-boxs div {
+  min-width: 350px;
+  min-height: 136px;
+}
+
+.approach-essence h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.approach-essence-boxs h4 {
+  font-size: 20px;
+}
+
+.approach-essence-boxs img {
+  float: left;
+}
+
+.approach-essence-boxs p {
+  font-size: 16px;
+}
+
+
+
+/* uservoice要素 */
+.usersvoice {
+  height: 1065px;
+  background-image: url(/images/uservoice-background.jpg);
+
+}
+
+
+
+.usersvoice-container {
+  background-image: url(/images/usersvoice_background_woman.png);
+  background-repeat: no-repeat;
+}
+
+.usersvoice-boxs {
+  align-items: center;
+  justify-items: center;
+}
+
+
+.usersvoice-boxs div {
+  background: rgb(255, 255, 255);
+  width: 245px;
+  height: 322px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px;
+}
+
+
+
+
+.usersvoice-boxs img {
+  justify-content: center;
+}
+
+.usersvoice-boxs h3 {
+  font-size: 16px;
+}
+
+.usersvoice-boxs p {
+  font-size: 12px;
+}
+
+
+/* product要素 */
+.product {
+  background-image: url(/images/product-background.jpg);
+  height: 1448px;
+}
+
+.product-main {
+  display: flex;
+  justify-content: center;
+}
+
+.product-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.product-single-item-buy {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* whatbrand?要素 */
+.whatbrand {
+  height: 1400px;
+  background-image: url(/images/brand_L.png), url(/images/brand_R.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatbrand-container {
+  text-align: center;
+
+}
+
+
+.whatbrand-box h3 {
+  font-size: 25 px;
+}
+
+.whatbrand-point p {
+  font-size: 16 px;
+}
+
+
+
+/* company要素 */
+.company {
+  background-image: url(/images/company_background.jpg);
+  background-repeat: no-repeat;
+  height: 996px;
+}
+
+
+.company-table {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 834px;
+  height: 576px;
+  margin: auto;
+}
+
+
+.company-table td {
+  border-bottom: 1px solid rgb(217, 217, 217);
+  padding: 15px;
+}
+
+.company-table th {
+  color: rgb(66, 159, 192);
+  border-bottom: 1px solid rgb(66, 159, 192);
+}
+
+
+
+/* shopping要素 */
+.shopping {
+  background-image: url(/images/shopping_background.jpg);
+  height: 2511px;
+}
+
+
+/* LINEUP要素 */
+
+
+
+
+
+
+
+/* footer要素 */
+footer {
+  background-image: url(/images/footer.png);
+  text-align: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.footer-link {
+  color: rgb(66, 159, 192);
+  list-style: none;
+}
+
+.footer-copy {
+  color: rgb(66, 159, 192);
+}
