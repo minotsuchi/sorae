@@ -33,37 +33,31 @@ main {
 
 
 /* MV */
-.mv {
+.mv-bg {
   background-image: url(/images/mv-main.jpg);
   background-repeat: no-repeat;
-  position: relative;
-  height: 1017px;
 }
 
-.mv-content h1 {
-  position: relative;
-  left: 74px;
-}
-
-.mv-content h2 {
-  position: relative;
-  left: 158px;
+.mv {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .mv-sorae-set {
   position: relative;
-  left: 126px;
+  padding-bottom: 60px;
+}
+
+.mv-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .btn-buy {
-  position: relative;
-  left: 500px;
-  bottom: 171px;
-}
-
-.mv-sorae-foryou {
-  position: relative;
-  top: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: -90px;
 }
 
 /* approach要素 */
@@ -115,7 +109,6 @@ main {
 .approach-point-boxs h3 {
   background-color: rgb(255, 255, 255);
   font-size: 20px;
-  margin-bottom: 15px;
 }
 
 .approach-point-boxs p {
@@ -137,6 +130,7 @@ main {
 
 .approach-essence-boxs {
   display: flex;
+  align-items: center;
 }
 
 .approach-essence-boxs div {
@@ -164,49 +158,51 @@ main {
 
 
 /* uservoice要素 */
-.usersvoice {
-  height: 1065px;
+
+
+
+.usersvoice-bg {
   background-image: url(/images/uservoice-background.jpg);
-
-}
-
-
-
-.usersvoice-container {
-  background-image: url(/images/usersvoice_background_woman.png);
   background-repeat: no-repeat;
 }
 
-.usersvoice-boxs {
-  align-items: center;
-  justify-items: center;
+.usersvoice-bg-center {
+  background-image: url(/images/usersvoice_background_woman.png);
+  width: 800px;
+  height: 569px;
+  background-position: center;
+  background-size: cover;
+}
+
+.usersvoice-container {
+  background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 
-.usersvoice-boxs div {
-  background: rgb(255, 255, 255);
-  width: 245px;
-  height: 322px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: center;
-  margin: 40px;
+.usersvoice-box img {
+  width: 50px;
+  height: 50px;
 }
 
-
-
-
-.usersvoice-boxs img {
-  justify-content: center;
-}
-
-.usersvoice-boxs h3 {
+.usersvoice-box h3 {
   font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.usersvoice-boxs p {
-  font-size: 12px;
+.usersvoice-box p {
+  font-size: 14px;
+  text-align: center;
 }
+
+
+
+
+
+
+
+
 
 
 /* product要素 */
