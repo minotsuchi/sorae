@@ -18,7 +18,7 @@ main {
 
 .banner {
   background: url("/images/banner.png") no-repeat center center;
-  height: 200px;
+  padding: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,10 @@ main {
 
 /* uservoice要素 */
 
-
+.usersvoice {
+  position: relative;
+  top: -60px;
+}
 
 .usersvoice-bg {
   background-image: url(/images/uservoice-background.jpg);
@@ -174,15 +177,17 @@ main {
   background-size: cover;
 }
 
-.usersvoice-container {
+.usersvoice-box {
   background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 245px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-
 .usersvoice-box img {
-  width: 50px;
-  height: 50px;
+display: block;
+  margin: 0 auto 10px; 
 }
 
 .usersvoice-box h3 {
@@ -206,34 +211,62 @@ main {
 
 
 /* product要素 */
-.product {
+.product-bg {
   background-image: url(/images/product-background.jpg);
-  height: 1448px;
+  background-repeat: no-repeat;
 }
 
-.product-main {
+.product {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.product-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-content {
   display: flex;
   justify-content: center;
 }
 
 .product-buy {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  justify-content: center;
+
+}
+
+.product-price {
+
+  align-items: center;
+
+}
+
+.product-foryou {
+  position: absolute;
+  left: 200px;
+}
+
+.product-btn-buy {
+  position: absolute;
+  right: 320px;
+
 }
 
 .product-single-item-buy {
-  text-align: center;
-  margin: 20px auto;
   display: flex;
   justify-content: center;
+  padding-top: 140px;
 }
 
 
 /* whatbrand?要素 */
-.whatbrand {
-  height: 1400px;
+
+.whatbrand-bg {
   background-image: url(/images/brand_L.png), url(/images/brand_R.png);
   background-repeat: no-repeat;
   background-position: left top, right top;
@@ -241,9 +274,20 @@ main {
   margin-right: auto;
 }
 
-.whatbrand-container {
-  text-align: center;
 
+
+.whatbrand {
+  height: 1400px;
+
+}
+
+.whatbrand-container {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 
