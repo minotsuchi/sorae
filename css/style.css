@@ -18,7 +18,8 @@ main {
 
 .banner {
   background: url("/images/banner.png") no-repeat center center;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +30,7 @@ main {
 .banner h2 {
   align-items: center;
   font-size: 48px;
+  font-weight: normal;
 }
 
 
@@ -161,7 +163,7 @@ main {
 
 .usersvoice {
   position: relative;
-  top: -60px;
+  margin-top: -60px;
 }
 
 .usersvoice-bg {
@@ -171,11 +173,15 @@ main {
 
 .usersvoice-bg-center {
   background-image: url(/images/usersvoice_background_woman.png);
-  width: 800px;
-  height: 569px;
-  background-position: center;
-  background-size: cover;
+  background-size: 800px;
+  background-repeat: no-repeat;
+
 }
+
+.usersvoice-container {
+  position: relative;
+}
+
 
 .usersvoice-box {
   background-color: rgb(255, 255, 255);
@@ -183,11 +189,12 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: absolute;
 }
 
 .usersvoice-box img {
-display: block;
-  margin: 0 auto 10px; 
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .usersvoice-box h3 {
@@ -200,6 +207,27 @@ display: block;
   font-size: 14px;
   text-align: center;
 }
+
+.usersvoice-box-left-top {
+  top: 20px;
+  left: 20px;
+}
+
+.usersvoice-box-left-bottom {
+  bottom: 20px;
+  left: 20px;
+}
+
+.usersvoice-box-right-top {
+  top: 20px;
+  right: 20px;
+}
+
+.usersvoice-box-right-bottom {
+  bottom: 20px;
+  right: 20px;
+}
+
 
 
 
@@ -217,8 +245,9 @@ display: block;
 }
 
 .product {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  position: relative;
+  top: -60px;
+  padding-bottom: 10px;
 }
 
 .product-flex {
@@ -241,26 +270,26 @@ display: block;
 }
 
 .product-price {
-
+  display: flex;
   align-items: center;
 
 }
 
 .product-foryou {
   position: absolute;
-  left: 200px;
+  left: 20px;
 }
 
 .product-btn-buy {
   position: absolute;
-  right: 320px;
+  right: 150px;
 
 }
 
 .product-single-item-buy {
   display: flex;
   justify-content: center;
-  padding-top: 140px;
+  padding-top: 120px;
 }
 
 
@@ -269,55 +298,67 @@ display: block;
 .whatbrand-bg {
   background-image: url(/images/brand_L.png), url(/images/brand_R.png);
   background-repeat: no-repeat;
-  background-position: left top, right top;
-  margin-left: auto;
-  margin-right: auto;
+  background-position: left center, right center;
 }
+
 
 
 
 .whatbrand {
-  height: 1400px;
-
+  position: relative;
+  top: -60px;
+  padding-bottom: 40px;
 }
 
-.whatbrand-container {
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.whatbrand-contents {
   text-align: center;
-  padding: 60px 20px;
+}
+
+.whatbrand-main h3 {
+  padding: 40px;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.whatbrand-main p {
+  padding-bottom: 72px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(83, 108, 131);
+  line-height: 2;
+}
+
+.whatbrand img {
+  display: block;
+  margin: 0 auto 10px;
 }
 
 
-.whatbrand-box h3 {
-  font-size: 25 px;
-}
-
-.whatbrand-point p {
+.whatbrand-point {
   font-size: 16 px;
+  line-height: 2;
 }
 
 
 
 /* company要素 */
-.company {
+.company-bg {
   background-image: url(/images/company_background.jpg);
   background-repeat: no-repeat;
-  height: 996px;
+}
+
+.company {
+  position: relative;
+  top: -60px;
 }
 
 
 .company-table {
   background: rgb(255, 255, 255);
   box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
-  padding: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 60px 77px 60px 77px;
   width: 834px;
-  height: 576px;
   margin: auto;
 }
 
@@ -330,16 +371,23 @@ display: block;
 .company-table th {
   color: rgb(66, 159, 192);
   border-bottom: 1px solid rgb(66, 159, 192);
+  text-align: left;
+  font-weight: normal;
 }
 
 
 
 /* shopping要素 */
-.shopping {
+.shopping-bg {
   background-image: url(/images/shopping_background.jpg);
-  height: 2511px;
+  background-repeat: no-repeat;
 }
 
+.shopping {
+  position: relative;
+  top: -60px;
+  padding-bottom: 40px;
+}
 
 /* LINEUP要素 */
 
