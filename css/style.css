@@ -1,5 +1,5 @@
 body {
-  font-family: FOT-TsukuARdGothic Std;
+  font-family: FOT-TsukuARdGothic Std, sans-serif;
   font-size: 16px;
 }
 
@@ -133,6 +133,8 @@ main {
 .approach-essence-boxs {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .approach-essence-boxs div {
@@ -141,7 +143,8 @@ main {
 }
 
 .approach-essence h3 {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -169,23 +172,27 @@ main {
 .usersvoice-bg {
   background-image: url(/images/uservoice-background.jpg);
   background-repeat: no-repeat;
+
 }
 
 .usersvoice-bg-center {
   background-image: url(/images/usersvoice_background_woman.png);
   background-size: 800px;
   background-repeat: no-repeat;
-
+  background-position: 100px 100px;
 }
 
 .usersvoice-container {
   position: relative;
+  justify-content: center;
+  height: 800px;
 }
 
 
 .usersvoice-box {
   background-color: rgb(255, 255, 255);
   width: 245px;
+  height: 322px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -199,7 +206,7 @@ main {
 
 .usersvoice-box h3 {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -214,7 +221,7 @@ main {
 }
 
 .usersvoice-box-left-bottom {
-  bottom: 20px;
+  bottom: 70px;
   left: 20px;
 }
 
@@ -224,7 +231,7 @@ main {
 }
 
 .usersvoice-box-right-bottom {
-  bottom: 20px;
+  bottom: 70px;
   right: 20px;
 }
 
@@ -351,6 +358,7 @@ main {
 .company {
   position: relative;
   top: -60px;
+  padding: 50px;
 }
 
 
@@ -389,8 +397,141 @@ main {
   padding-bottom: 40px;
 }
 
+.shopping-box-bg {
+  background-image: url(/images/shopping_box_background.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.shopping-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 56px 26px 56px;
+}
+
+
+.shopping-item p {
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.shopping-catchphrase {
+  position: relative;
+  padding: 50px;
+}
+
+.shopping-catchphrase img {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  align-items: center;
+}
+
+.shopping-catchphrase p {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-plus {
+  font-size: 30px;
+  padding: 25px;
+}
+
+
+
+
+.shopping-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.shopping-price p {
+  font-size: 26px;
+}
+
+.shopping-price-main {
+  font-family: "Fragment Mono";
+  font-size: 50px;
+}
+
+.shopping-btn-buy {
+  position: absolute;
+  right: 150px;
+
+}
+
+
+
 /* LINEUP要素 */
 
+.lineup-title-bg {
+  background-image: url(/images/shopping_deco.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineup-title-bg h3 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.lineup-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.lineup_item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.lineup_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 60px;
+}
+
+
+
+.lineup-price {
+  font-family: "Fragment Mono";
+  font-size: 46px;
+}
+
+.treatment-btn-buy {
+  position: absolute;
+
+
+}
+
+
+.lineup_item p {
+  font-size: 18px;
+  border-bottom: 1px dashed #424242;
+  width: 140%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.lineup_item h4 {
+  font-size: 16px;
+}
 
 
 
@@ -403,11 +544,16 @@ footer {
   text-align: center;
   height: 500px;
   background-repeat: no-repeat;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: -110px;
+  padding-bottom: 40px;
 }
 
+.footer-logo-bg {
+  background-image: url(/images/footer_logo.png);
+  background-repeat: no-repeat;
+  display: flex;
+}
 
 .footer-link {
   color: rgb(66, 159, 192);
@@ -416,4 +562,5 @@ footer {
 
 .footer-copy {
   color: rgb(66, 159, 192);
+  text-align: center;
 }
