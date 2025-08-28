@@ -1,5 +1,5 @@
 body {
-  font-family: FOT-TsukuARdGothic Std, sans-serif;
+  font-family: "FOT-TsukuARdGothic Std", sans-serif;
   font-size: 16px;
 }
 
@@ -68,7 +68,20 @@ main {
   font-size: 30px;
   text-align: center;
   justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
 }
+
+.approach-img h3::before,
+.approach-img h3::after {
+  background-color: rgb(10, 32, 78);
+  content: "";
+  height: 1px;
+  width: 30px;
+
+}
+
 
 .approach-img div {
   padding-bottom: 100px;
@@ -76,6 +89,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.approach-img h3 {
+  font-weight: normal;
+
 }
 
 .approach-cloud {
@@ -99,6 +117,10 @@ main {
   gap: 20px;
 }
 
+.approach-point-boxs h3 {
+  text-align: center;
+}
+
 .approach-point-boxs div {
   background-color: rgb(255, 255, 255);
   padding: 30px 20px;
@@ -115,10 +137,19 @@ main {
 
 .approach-point-boxs p {
   font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  text-wrap: balance;
+  line-height: 1.8;
 }
 
 .approach-point-boxs h3::after {
-  border-style: 2px solid black;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1px;
+  background-color: rgb(90, 178, 255);
+  margin: 1em auto 0;
 }
 
 
@@ -158,6 +189,8 @@ main {
 
 .approach-essence-boxs p {
   font-size: 16px;
+  text-wrap: balance;
+  line-height: 1.8;
 }
 
 
@@ -197,6 +230,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   position: absolute;
+
 }
 
 .usersvoice-box img {
@@ -206,18 +240,22 @@ main {
 
 .usersvoice-box h3 {
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  line-height: 2;
 }
 
 .usersvoice-box p {
   font-size: 14px;
   text-align: center;
+  line-height: 1.5;
+  text-wrap: balance;
 }
 
 .usersvoice-box-left-top {
   top: 20px;
   left: 20px;
+
 }
 
 .usersvoice-box-left-bottom {
@@ -303,9 +341,8 @@ main {
 /* whatbrand?要素 */
 
 .whatbrand-bg {
-  background-image: url(/images/brand_L.png), url(/images/brand_R.png);
+  background-image: url(/images/brand_background.jpg);
   background-repeat: no-repeat;
-  background-position: left center, right center;
 }
 
 
@@ -319,13 +356,16 @@ main {
 
 .whatbrand-contents {
   text-align: center;
+  text-wrap: balance;
+  line-height: 1.8;
+  margin: 0 auto;
+  height: 1059px;
 }
 
 .whatbrand-main h3 {
-  padding: 40px;
   font-weight: bold;
   font-size: 25px;
-
+  padding-bottom: 40px;
 }
 
 .whatbrand-main p {
@@ -336,9 +376,10 @@ main {
   line-height: 2;
 }
 
-.whatbrand img {
+
+.whatbrand-point img {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto;
 }
 
 
@@ -347,6 +388,9 @@ main {
   line-height: 2;
 }
 
+.whatbrand-point-sub {
+  margin-top: 40px;
+}
 
 
 /* company要素 */
@@ -361,15 +405,14 @@ main {
   padding: 50px;
 }
 
-
 .company-table {
   background: rgb(255, 255, 255);
   box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
   padding: 60px 77px 60px 77px;
   width: 834px;
   margin: auto;
+  border-spacing: 0;
 }
-
 
 .company-table td {
   border-bottom: 1px solid rgb(217, 217, 217);
@@ -382,6 +425,7 @@ main {
   text-align: left;
   font-weight: normal;
 }
+
 
 
 
@@ -400,11 +444,9 @@ main {
 .shopping-box-bg {
   background-image: url(/images/shopping_box_background.png);
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-
 }
 
 .shopping-box {
@@ -413,6 +455,8 @@ main {
   justify-content: center;
   padding: 26px 56px 26px 56px;
 }
+
+
 
 
 .shopping-item p {
@@ -441,8 +485,9 @@ main {
 }
 
 .shopping-plus {
+  font-family: "Fragment Mono";
   font-size: 30px;
-  padding: 25px;
+  padding: 30px;
 }
 
 
@@ -453,11 +498,16 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 50px;
+  border-bottom: 1px dashed #424242;
+  border-top: 1px dashed #424242;
 }
+
 
 
 .shopping-price p {
   font-size: 26px;
+display: inline-block;
 }
 
 .shopping-price-main {
@@ -467,26 +517,30 @@ main {
 
 .shopping-btn-buy {
   position: absolute;
-  right: 150px;
-
+  right: 220px;
 }
 
 
 
 /* LINEUP要素 */
 
-.lineup-title-bg {
-  background-image: url(/images/shopping_deco.png);
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .lineup-title-bg h3 {
   font-size: 48px;
   font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
+.lineup-title-bg {
+  background-image: url(/images/shopping_deco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
 
 .lineup-contents {
   display: flex;
@@ -494,17 +548,19 @@ main {
 }
 
 .lineup_item img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: left;
+  max-width: 240px;
 }
 
 .lineup_item {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 60px;
+  padding: 50px 100px;
+}
+
+.lineup_text {
+  flex: 1;
+  position: relative;
 }
 
 
@@ -512,55 +568,121 @@ main {
 .lineup-price {
   font-family: "Fragment Mono";
   font-size: 46px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 20px;
+}
+
+.lineup-box {
+  display: flex;
+}
+
+
+.lineup-price-yen {
+  display: inline-block;
+  text-align: center;
+  font-family: Fragment Mono;
+  line-height: 1.2;
+  font-size: 29px;
+}
+
+.lineup-price-yen::before {
+  content: "税込";
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.lineup-price span {
+  display: flex;
+  flex-direction: column;
 }
 
 .treatment-btn-buy {
   position: absolute;
-
-
 }
+
+
 
 
 .lineup_item p {
   font-size: 18px;
   border-bottom: 1px dashed #424242;
-  width: 140%;
   padding-top: 50px;
   padding-bottom: 10px;
 }
 
 .lineup_item h4 {
+  display: flex;
+  align-items: center;
   font-size: 16px;
 }
 
+.shampoo-btn-buy {
+  display: inline-block;
+  width: 120px;
+  position: absolute;
+  right: -10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
 
+.shampoo-btn-buy img,
+.treatment-btn-buy img,
+.hairoil-btn-buy img {
+  display: inline-block;
+  width: 100%;
+}
 
 
 
 
 /* footer要素 */
 footer {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(/images/footer.png);
   text-align: center;
-  height: 500px;
   background-repeat: no-repeat;
   position: relative;
-  top: -110px;
-  padding-bottom: 40px;
+  top: -50px;
+  height: 500px;
+   padding: 180px;
 }
 
-.footer-logo-bg {
-  background-image: url(/images/footer_logo.png);
-  background-repeat: no-repeat;
-  display: flex;
+
+
+
+
+.footer-logo img {
+ display: block;
+  margin: 0 auto; 
 }
 
 .footer-link {
   color: rgb(66, 159, 192);
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0 30px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.footer-link li a {
+  text-decoration: none;
+  color: #0080a0;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link li a:hover {
+  color: #00aacc;
 }
 
 .footer-copy {
   color: rgb(66, 159, 192);
-  text-align: center;
 }
