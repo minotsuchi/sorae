@@ -433,6 +433,7 @@ main {
 .shopping-bg {
   background-image: url(/images/shopping_background.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .shopping {
@@ -447,15 +448,24 @@ main {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .shopping-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px 56px 26px 56px;
+
 }
 
+.shopping-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 200px;
+}
 
 
 
@@ -464,16 +474,22 @@ main {
   text-align: center;
 }
 
+.shopping-item img {
+  width: 150px;
+  height: auto;
+}
+
+
 
 .shopping-catchphrase {
   position: relative;
-  padding: 50px;
+  padding-bottom: 80px;
 }
 
 .shopping-catchphrase img {
   position: absolute;
-  bottom: 10px;
-  left: 70px;
+  top: -20px;
+  left: 80px;
   align-items: center;
 }
 
@@ -507,7 +523,7 @@ main {
 
 .shopping-price p {
   font-size: 26px;
-display: inline-block;
+  display: inline-block;
 }
 
 .shopping-price-main {
@@ -648,7 +664,7 @@ footer {
   position: relative;
   top: -50px;
   height: 500px;
-   padding: 180px;
+  padding:150px;
 }
 
 
@@ -656,8 +672,8 @@ footer {
 
 
 .footer-logo img {
- display: block;
-  margin: 0 auto; 
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-link {
